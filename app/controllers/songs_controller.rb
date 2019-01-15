@@ -9,5 +9,6 @@ class SongsController < ApplicationController
   
   def create
     @song = Song.new(params.require(:song).permit(:name, :artist_id, :genre_id))
+    @song.save
   end
 end

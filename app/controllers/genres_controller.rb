@@ -14,4 +14,6 @@ class GenresController < ApplicationController
   end
   
   def edit
+    
+  end
 end

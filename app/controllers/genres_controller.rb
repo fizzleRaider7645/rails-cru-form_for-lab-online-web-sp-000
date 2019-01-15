@@ -8,6 +8,6 @@ class GenresController < ApplicationController
   end
   
   def create
-    @genre
+    @genre = Genre.new
   end
 end

@@ -12,4 +12,6 @@ class SongsController < ApplicationController
     @song.save
     redirect_to song_path(@song)
   end
+  
+  def edit
 end

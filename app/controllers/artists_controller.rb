@@ -9,7 +9,7 @@ class ArtistsController < ApplicationController
   
   def create
     @artist = Artist.new(params.require(:artist).permit(:name, :bio))
-    binding.pry
+    @artist.save
     redirect_to artist_path(@artist)
   end
 end

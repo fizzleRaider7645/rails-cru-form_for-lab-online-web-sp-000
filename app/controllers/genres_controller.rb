@@ -18,4 +18,6 @@ class GenresController < ApplicationController
   end
   
   def update
+    
+  end
 end

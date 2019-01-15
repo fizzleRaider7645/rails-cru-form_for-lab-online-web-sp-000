@@ -9,5 +9,6 @@ class GenresController < ApplicationController
   
   def create
     @genre = Genre.new(params.require(:genre).permit(:name))
+    @genre
   end
 end

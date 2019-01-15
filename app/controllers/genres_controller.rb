@@ -14,6 +14,6 @@ class GenresController < ApplicationController
   end
   
   def edit
-    
+    @genre = Genre
   end
 end

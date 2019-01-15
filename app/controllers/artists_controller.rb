@@ -19,7 +19,7 @@ class ArtistsController < ApplicationController
   
   def update
     @artist = Artist.find(params[:id])
-    @artist.update(school_class_params)
-    redirect_to artist_path(@school_class)
+    @artist.update(params.require(:artist).permit(:name, :bio))
+    redirect_to artist_path(@artist)
   end
 end

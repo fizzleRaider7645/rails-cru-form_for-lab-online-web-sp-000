@@ -12,4 +12,6 @@ class GenresController < ApplicationController
     @genre.save
     redirect_to genre_path(@genre)
   end
+  
+  def edit
 end

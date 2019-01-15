@@ -8,4 +8,6 @@ class SongsController < ApplicationController
   end
   
   def create
+    @song = Song.new(params.require)
+  end
 end

@@ -18,7 +18,7 @@ class ArtistsController < ApplicationController
   end
   
   def update
-    @artist = SchoolClass.find(params[:id])
+    @artist = Artist.find(params[:id])
     @school_class.update(school_class_params)
     redirect_to school_class_path(@school_class)
   end
